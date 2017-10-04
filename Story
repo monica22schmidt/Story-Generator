@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class MySillyStory {
+   public static String prepareStory(int number, String dest, String body, String clothing, String noun, double decimal, String myName, String myGoal){
+      String name = "Monica Schmidt";
+      String story = new String("Once there was a girl named " + myName+ ". She had " + number + " siblings. It was a very sad life. One time she went to " + dest + " where she broke her " + body + ". At the time she was only wearing a " + clothing + " and everyone around her was watching, including " + noun + ". So " + name + " won't ever go back to " + dest + " for " + decimal + " years. But her goal is to" + myGoal + ".");
+      return story;
+   }
+	public static void main(String[] args) {
+      Scanner scr = new Scanner(System.in);
+      String name = "Monica Schmidt";
+      System.out.print("Enter a whole number: ");
+      int wholeNum = scr.nextInt();
+      System.out.print("Enter a destination: ");
+      String destination = scr.next();
+      System.out.print("Enter a human body part: ");
+      String humanBodyPart = scr.next();
+      System.out.print("Enter an article of clothing: ");
+      String articleOfClothing = scr.next();
+      System.out.print("Enter a noun: ");
+      String noun = scr.next();
+      System.out.print("Enter a number with a decimal: ");
+      double decimalNumber = scr.nextDouble();
+      System.out.print("Enter a goal: ");
+      String myGoal = scr.nextLine();
+      System.out.print(myGoal);
+      System.out.print(prepareStory(wholeNum, destination, humanBodyPart, articleOfClothing, noun, decimalNumber, name, myGoal));
+	}
+}

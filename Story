@@ -6,7 +6,7 @@ public class MySillyStory {
       String story = new String("Once there was a girl named " + myName+ ". She had " + number + " siblings. It was a very sad life. One time she went to " + dest + " where she broke her " + body + ". At the time she was only wearing a " + clothing + " and everyone around her was watching, including " + noun + ". So " + name + " won't ever go back to " + dest + " for " + decimal + " years. But her goal is to" + myGoal + ".");
       return story;
    }
-	public static void main(String[] args) {
+   public static void main(String[] args) {
       Scanner scr = new Scanner(System.in);
       String name = "Monica Schmidt";
       System.out.print("Enter a whole number: ");
@@ -25,5 +25,5 @@ public class MySillyStory {
       String myGoal = scr.nextLine();
       System.out.print(myGoal);
       System.out.print(prepareStory(wholeNum, destination, humanBodyPart, articleOfClothing, noun, decimalNumber, name, myGoal));
-	}
+  }
 }
